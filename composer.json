@@ -1,15 +1,14 @@
 {
     "$schema": "https://getcomposer.org/schema.json",
-    "name": "laravel/laravel",
+    "name": "ninja5pizza/pets.pizza.ninja",
     "type": "project",
-    "description": "The skeleton application for the Laravel framework.",
+    "description": "This is the souce code of pets.pizza.ninja.",
     "keywords": [
-        "laravel",
-        "framework"
+        "pizza",
+        "pets"
     ],
-    "license": "MIT",
     "require": {
-        "php": "^8.2",
+        "php": "^8.3",
         "laravel/framework": "^11.31",
         "laravel/tinker": "^2.9"
     },
