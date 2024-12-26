@@ -7,7 +7,6 @@ export default {
     "./resources/**/*.blade.php",
     "./resources/**/*.js",
     "./resources/**/*.vue",
-    "./resources/svg/logo-animated.svg",
   ],
   theme: {
     extend: {
