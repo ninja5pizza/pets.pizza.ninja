@@ -15,6 +15,10 @@
         <meta property="og:description" content="Feed your pets!">
         <meta property="og:image" content="{{ cdn_asset('opengraph/pizza_pets/default-twitter-card-large.png') }}">
 
+        <meta name="twitter:card" content="summary_large_image">
+        <meta name="twitter:title" content="PPIZZA PETS">
+        <meta name="twitter:image" content="{{ cdn_asset('opengraph/pizza_pets/default-twitter-card-large.png') }}">
+
         @vite('resources/css/app.css')
     </head>
     <body class="bg-pizza-orange">
