@@ -9,6 +9,12 @@
         <link rel="preconnect" href="https://rsms.me/">
         <link rel="stylesheet" href="https://rsms.me/inter/inter.css">
 
+        <meta property="og:url" content="{{ url()->full() }}">
+        <meta property="og:type" content="website">
+        <meta property="og:title" content="PIZZA PETS">
+        <meta property="og:description" content="Feed your pets!">
+        <meta property="og:image" content="{{ cdn_asset('opengraph/pizza_pets/default-twitter-card-large.png') }}">
+
         @vite('resources/css/app.css')
     </head>
     <body class="bg-pizza-orange">
