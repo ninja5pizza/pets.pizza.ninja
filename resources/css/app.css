@@ -74,3 +74,8 @@
     animation: colorRoll 3.5s ease-in-out infinite, colorRollWithPause 8.5s steps(9, end) infinite;
     animation-delay: 2.333s, 2.333s;
 }
+
+#bg-pets-striped div:nth-child(6) {
+    animation: colorRoll 3.5s ease-in-out infinite, colorRollWithPause 8.5s steps(9, end) infinite;
+    animation-delay: 2.333s, 2.333s;
+}
