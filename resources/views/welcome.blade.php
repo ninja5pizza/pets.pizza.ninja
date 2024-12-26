@@ -12,7 +12,7 @@
         @vite('resources/css/app.css')
     </head>
     <body class="bg-pizza-orange">
-        <section class="h-screen relative z-10 overflow-hidden flex flex-col justify-center mt-10">
+        <main class="h-screen relative z-10 overflow-hidden flex flex-col justify-center mt-10">
             <div class="flex flex-col justify-center items-center">
                 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"  width="324" height="274" viewBox="0 0 162 137" fill="none">
                     <g clip-path="url(#clip0_8818_27489)">
@@ -36,6 +36,6 @@
                     <span aria-hidden="true">→</span>
                 </a>
             </div>
-        </section>
+        </main>
     </body>
 </html>
