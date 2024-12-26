@@ -24,7 +24,7 @@
         @vite('resources/css/app.css')
     </head>
     <body class="bg-pizza-orange">
-        <main class="w-full mt-64 mb-72 flex flex-col items-center" aria-labelledby="pizza-pets-heading">
+        <main class="w-full mt-64 mb-36 flex flex-col items-center" aria-labelledby="pizza-pets-heading">
             <h2 id="pizza-pets-heading" class="sr-only">Pizza Pets</h2>
             <div class="relative w-full">
                 <a href="https://pizzapets.fun" target="_blank" rel="noopener">
@@ -44,5 +44,15 @@
                 </div>
             </div>
         </main>
+
+        <section class="flex justify-center items-center">
+            <a
+                class="text-xl font-semibold leading-6 text-orange-100 hover:text-white"
+                href="https://pizzapets.fun"
+            >
+                feed me
+                <span aria-hidden="true">→</span>
+            </a>
+        </section>
     </body>
 </html>
