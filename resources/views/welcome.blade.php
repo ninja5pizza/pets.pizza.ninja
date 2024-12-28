@@ -65,5 +65,10 @@
                 <div class="ml-6 animate-bounce-right" aria-hidden="true">→</div>
             </a>
         </section>
+
+        <x-chart class="mt-16 mb-64"/>
+
+        @vite('resources/js/app.js')
+        @stack('scripts')
     </body>
 </html>
