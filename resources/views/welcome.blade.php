@@ -27,6 +27,8 @@
         <link rel="preconnect" href="{{ cdn_asset('/') }}">
         <link rel="preload" href="{{ cdn_asset('fonts/homevideo_regular.ttf') }}" as="font" type="font/ttf" crossorigin>
 
+        <x-layout.head.favicons/>
+
         @vite('resources/css/app.css')
     </head>
     <body class="bg-pizza-orange">
