@@ -21,6 +21,9 @@
         <meta name="twitter:title" content="PPIZZA PETS">
         <meta name="twitter:image" content="{{ cdn_asset('opengraph/pizza_pets/default-twitter-card-large.png') }}">
 
+        <link rel="preconnect" href="https://rsms.me/">
+        <link rel="stylesheet" href="https://rsms.me/inter/inter.css">
+
         @vite('resources/css/app.css')
     </head>
     <body class="bg-pizza-orange">
