@@ -32,7 +32,7 @@
         @vite('resources/css/app.css')
     </head>
     <body class="bg-pizza-orange">
-        <main class="w-full mt-64 mb-24 flex flex-col items-center" aria-labelledby="pizza-pets-heading">
+        <main class="w-full mt-36 mb-24 flex flex-col items-center" aria-labelledby="pizza-pets-heading">
             <h2 id="pizza-pets-heading" class="sr-only">Pizza Pets</h2>
             <div class="relative w-full">
                 <a href="https://pizzapets.fun" target="_blank" rel="noopener">
@@ -68,7 +68,11 @@
             </a>
         </section>
 
-        <x-chart class="mt-32 mb-64"/>
+        <div class="mt-32 p-2 flex items-center justify-center bg-orange-900 font-game text-orange-600">
+            PIZZA PETS FLOORPRICE
+        </div>
+
+        <x-chart class="mb-64"/>
 
         @vite('resources/js/app.js')
         @stack('scripts')
