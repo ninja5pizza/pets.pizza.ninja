@@ -50,7 +50,7 @@
                 class="text-xl font-semibold leading-6 text-orange-100 hover:text-white"
                 href="https://pizzapets.fun"
             >
-                feed me
+                feed your pets
                 <span aria-hidden="true">→</span>
             </a>
         </section>
