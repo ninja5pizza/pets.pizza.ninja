@@ -68,7 +68,7 @@
             </a>
         </section>
 
-        <x-chart class="mt-16 mb-64"/>
+        <x-chart class="mt-32 mb-64"/>
 
         @vite('resources/js/app.js')
         @stack('scripts')
