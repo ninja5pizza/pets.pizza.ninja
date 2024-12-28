@@ -11,7 +11,8 @@ export default {
   theme: {
     extend: {
       fontFamily: {
-        sans: ['InterVariable', ...defaultTheme.fontFamily.sans],
+        'game': ['"Home Video"', 'Inter', ...defaultTheme.fontFamily.sans],
+        'inter': ['Inter', ...defaultTheme.fontFamily.sans],
       },
       colors: {
         'pizza-orange': '#ff5400',

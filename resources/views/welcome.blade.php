@@ -24,6 +24,9 @@
         <link rel="preconnect" href="https://rsms.me/">
         <link rel="stylesheet" href="https://rsms.me/inter/inter.css">
 
+        <link rel="preconnect" href="{{ cdn_asset('/') }}">
+        <link rel="preload" href="{{ cdn_asset('fonts/homevideo_regular.ttf') }}" as="font" type="font/ttf" crossorigin>
+
         @vite('resources/css/app.css')
     </head>
     <body class="bg-pizza-orange">
@@ -50,7 +53,7 @@
 
         <section class="flex justify-center items-center">
             <a
-                class="text-xl font-semibold leading-6 text-orange-100 hover:text-white"
+                class="font-game text-xl font-semibold leading-6 text-orange-100 hover:text-white"
                 href="https://pizzapets.fun"
             >
                 feed your pets

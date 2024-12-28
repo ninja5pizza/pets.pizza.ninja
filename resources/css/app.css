@@ -2,6 +2,13 @@
 @tailwind components;
 @tailwind utilities;
 
+@font-face {
+    font-family: 'Home Video';
+    src: url('https://cdn.pizza.ninja/fonts/homevideo_regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
 #bg-pets-striped div {
     transition: background-color 1.5s ease-in-out; /* Increased transition time for smoother changes */
 }
