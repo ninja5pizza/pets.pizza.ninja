@@ -30,7 +30,7 @@
         @vite('resources/css/app.css')
     </head>
     <body class="bg-pizza-orange">
-        <main class="w-full mt-64 mb-36 flex flex-col items-center" aria-labelledby="pizza-pets-heading">
+        <main class="w-full mt-64 mb-24 flex flex-col items-center" aria-labelledby="pizza-pets-heading">
             <h2 id="pizza-pets-heading" class="sr-only">Pizza Pets</h2>
             <div class="relative w-full">
                 <a href="https://pizzapets.fun" target="_blank" rel="noopener">
@@ -51,13 +51,18 @@
             </div>
         </main>
 
-        <section class="flex justify-center items-center">
+        <section class="ml-6 flex justify-center items-center font-game text-4xl font-semibold leading-6 text-orange-100">
             <a
-                class="font-game text-xl font-semibold leading-6 text-orange-100 hover:text-white"
+                class="hover:text-white"
                 href="https://pizzapets.fun"
             >
                 feed your pets
-                <span aria-hidden="true">→</span>
+            </a>
+            <a
+                class="hover:text-white"
+                href="https://pizzapets.fun"
+            >
+                <div class="ml-6 animate-bounce-right" aria-hidden="true">→</div>
             </a>
         </section>
     </body>
