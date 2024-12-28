@@ -53,7 +53,7 @@
             </div>
         </main>
 
-        <section class="ml-6 flex justify-center items-center font-game text-4xl font-semibold leading-6 text-orange-100">
+        <section class="ml-6 flex justify-center items-center font-game text-2xl md:text-4xl font-semibold leading-6 text-orange-100">
             <a
                 class="hover:text-white"
                 href="https://pizzapets.fun"
