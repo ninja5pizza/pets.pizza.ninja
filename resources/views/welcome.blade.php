@@ -78,6 +78,8 @@
 
         <x-chart class="mb-64"/>
 
+        <x-footer/>
+
         @vite('resources/js/app.js')
         @stack('scripts')
     </body>
