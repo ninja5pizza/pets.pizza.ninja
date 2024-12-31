@@ -30,6 +30,10 @@
         <x-layout.head.favicons/>
 
         @vite('resources/css/app.css')
+
+        @if(config('services.fathom.site_id'))
+        <script src="https://cdn.usefathom.com/script.js" data-site="{{ config('services.fathom.site_id') }}" defer></script>
+        @endif
     </head>
     <body class="bg-pizza-orange">
         <main class="w-full mt-36 mb-24 flex flex-col items-center" aria-labelledby="pizza-pets-heading">
