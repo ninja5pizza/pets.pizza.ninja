@@ -34,6 +34,8 @@
         @endif
     </head>
     <body class="bg-pizza-orange">
+        <x-navbar/>
+
         <main class="w-full mt-36 mb-24 flex flex-col items-center" aria-labelledby="pizza-pets-heading">
             <h2 id="pizza-pets-heading" class="sr-only">Pizza Pets</h2>
             <div class="relative w-full">
