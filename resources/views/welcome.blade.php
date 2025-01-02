@@ -82,7 +82,7 @@
             FLOORPRICE
         </div>
 
-        <x-chart class="mb-64"/>
+        <x-chart class="mb-24"/>
 
         <x-footer/>
 
