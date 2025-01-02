@@ -70,7 +70,9 @@
             </a>
         </section>
 
-        <div class="mt-32 p-2 flex items-center justify-center bg-orange-900 font-game text-orange-600">
+        <x-pulverizers/>
+
+        <div class="p-2 flex items-center justify-center bg-orange-900 font-game text-orange-600">
             PIZZA PETS FLOORPRICE
         </div>
 
