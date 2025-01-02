@@ -2,16 +2,18 @@
 
 namespace App\View\Components;
 
-use Closure;
-use Illuminate\View\Component;
 use Illuminate\Contracts\View\View;
 use Illuminate\Support\Facades\Http;
+use Illuminate\View\Component;
 
 class Statistics extends Component
 {
     public int $dead_count;
+
     public int $alive_count;
+
     public int $owner_count;
+
     public int $listed_for_sale;
 
     public function __construct()

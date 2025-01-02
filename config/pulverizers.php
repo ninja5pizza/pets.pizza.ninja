@@ -1,6 +1,6 @@
 <?php
 
-return  [
+return [
 
     'yellow' => '14580fd5072a0e96d8e0e6b1526319fde391d788b80a17eee23bf91ee1f961b2i5',
 
