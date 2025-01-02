@@ -74,12 +74,12 @@
 
         <x-socials/>
 
-        <x-statistics/>
-
         <x-pulverizers/>
 
+        <x-statistics/>
+
         <div class="mt-1 p-2 flex items-center justify-center bg-orange-900 font-game text-orange-600">
-            PIZZA PETS FLOORPRICE
+            FLOORPRICE
         </div>
 
         <x-chart class="mb-64"/>
