@@ -74,6 +74,8 @@
 
         <x-socials/>
 
+        <x-statistics/>
+
         <x-pulverizers/>
 
         <div class="mt-1 p-2 flex items-center justify-center bg-orange-900 font-game text-orange-600">

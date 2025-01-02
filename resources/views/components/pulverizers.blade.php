@@ -1,7 +1,7 @@
 <section
     aria-labelledby="pizza-pets-pulverizers"
     {{ $attributes->merge([
-        'class' => 'mt-32',
+        'class' => 'mt-1',
     ]) }}
 >
     <h2 id="pizza-pets-pulverizers" class="flex p-2 items-center justify-center bg-orange-900 font-game text-orange-600">
