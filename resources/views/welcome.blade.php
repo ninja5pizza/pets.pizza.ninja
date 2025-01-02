@@ -76,7 +76,7 @@
 
         <x-pulverizers/>
 
-        <div class="p-2 flex items-center justify-center bg-orange-900 font-game text-orange-600">
+        <div class="mt-1 p-2 flex items-center justify-center bg-orange-900 font-game text-orange-600">
             PIZZA PETS FLOORPRICE
         </div>
 
