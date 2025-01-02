@@ -7,7 +7,7 @@
     <h2 id="pizza-pets-pulverizers" class="flex p-2 items-center justify-center bg-orange-900 font-game text-orange-600">
         PULVERIZERS
     </h2>
-    <div cLass="flex flex-cols py-4 justify-center bg-white space-x-4">
+    <div cLass="flex flex-cols p-4 justify-center bg-white space-x-4">
         @foreach(config('pulverizers') as $key => $value)
             @svg('pulverizers.'.$key, 'w-96 md:w-24 rounded-md')
         @endforeach
