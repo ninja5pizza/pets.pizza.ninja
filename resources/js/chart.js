@@ -28,7 +28,7 @@ const chart = createChart(
     }
 );
 
-const priceFormatter = p => p.toFixed(2);
+const priceFormatter = p => p.toFixed(4);
 
 chart.applyOptions({
     localization: {
