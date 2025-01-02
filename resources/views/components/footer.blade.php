@@ -28,6 +28,9 @@
         </div>
     </div>
     <p class="mt-6 text-center leading-5 text-orange-100">
-        &copy; 2024 NINJA5.pizza. All rights reserved.
+        &copy; 2025
+        <a href="https://ninja5.pizza" target="_blank" rel="noopener">
+            NINJA5.pizza
+        </a>. All rights reserved.
     </p>
 </footer>
