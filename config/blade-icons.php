@@ -99,6 +99,14 @@ return [
 
         ],
 
+        'pulverizers' => [
+
+            'path' => 'resources/svg/pulverizers',
+
+            'prefix' => 'pulverizers',
+
+        ],
+
     ],
 
     /*
