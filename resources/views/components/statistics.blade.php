@@ -12,27 +12,19 @@
             <div class="grid grid-cols-2 gap-px lg:grid-cols-4">
                 <div class="px-4 py-6 sm:px-6 lg:px-8">
                     <p class="text-xs text-orange-900 uppercase">pets alive</p>
-                    <p class="mt-1 flex items-baseline gap-x-2">
-                        <span class="text-4xl text-white">{{ $alive_count }}</span>
-                    </p>
+                    <span class="text-4xl text-white">{{ $alive_count }}</span>
                 </div>
                 <div class="px-4 py-6 sm:px-6 lg:px-8">
                     <p class="text-xs text-orange-900 uppercase">pets dead</p>
-                    <p class="mt-1 flex items-baseline gap-x-2">
-                        <span class="text-4xl text-off-white">{{ $dead_count }}</span>
-                    </p>
+                    <span class="text-4xl text-off-white">{{ $dead_count }}</span>
                 </div>
                 <div class="px-4 py-6 sm:px-6 lg:px-8">
                     <p class="text-xs text-orange-900 uppercase">owners</p>
-                    <p class="mt-1 flex items-baseline gap-x-2">
-                        <span class="text-4xl text-off-white">{{ $owner_count }}</span>
-                    </p>
+                    <span class="text-4xl text-off-white">{{ $owner_count }}</span>
                 </div>
                 <div class="px-4 py-6 sm:px-6 lg:px-8">
                     <p class="text-xs text-orange-900 uppercase">listed for sale</p>
-                    <p class="mt-1 flex items-baseline gap-x-2">
-                        <span class="text-4xl text-off-white">{{ $listed_for_sale }}</span>
-                    </p>
+                    <span class="text-4xl text-off-white">{{ $listed_for_sale }}</span>
                 </div>
             </div>
         </div>
