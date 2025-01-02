@@ -18,7 +18,7 @@
         <meta property="twitter:domain" content="pets.pizza.ninja">
         <meta property="twitter:url" content="{{ url()->full() }}">
         <meta name="twitter:card" content="summary_large_image">
-        <meta name="twitter:title" content="PPIZZA PETS">
+        <meta name="twitter:title" content="PIZZA PETS">
         <meta name="twitter:image" content="{{ cdn_asset('opengraph/pizza_pets/default-twitter-card-large.png') }}">
 
         <link rel="preconnect" href="https://rsms.me/">
