@@ -70,6 +70,8 @@
             </a>
         </section>
 
+        <x-socials/>
+
         <x-pulverizers/>
 
         <div class="p-2 flex items-center justify-center bg-orange-900 font-game text-orange-600">
