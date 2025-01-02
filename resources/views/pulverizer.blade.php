@@ -38,7 +38,7 @@
 
         <main class="mt-12 flex justify-center">
             @svg('pulverizers.'.$type, [
-                'class' => 'w-96 border rounded-md hover:animate-shake',
+                'class' => 'w-96 border rounded-md animate-shake',
                 'title' => Str::of($type)->ucfirst()->append(' ')->append('Pizza Pet Pulverizer')->toString(),
             ])
         </main>
