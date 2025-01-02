@@ -5,11 +5,12 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
         <title>PIZZA PETS</title>
+        <meta name="description" content="Bitcoin's first digital pet. Feed it or it dies forever!">
 
         <meta property="og:url" content="{{ url()->full() }}">
         <meta property="og:type" content="website">
         <meta property="og:title" content="PIZZA PETS">
-        <meta property="og:description" content="Feed your pets!">
+        <meta property="og:description" content="Bitcoin's first digital pet. Feed it or it dies forever!">
         <meta property="og:image" content="{{ cdn_asset('opengraph/pizza_pets/default-twitter-card-large.png') }}">
 
         <meta property="twitter:domain" content="pets.pizza.ninja">
