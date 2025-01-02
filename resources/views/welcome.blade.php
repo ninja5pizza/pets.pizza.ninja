@@ -4,10 +4,10 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <title>Pizza.Pets.Ninja</title>
 
         <link rel="preconnect" href="https://rsms.me/">
         <link rel="stylesheet" href="https://rsms.me/inter/inter.css">
+        <title>PIZZA PETS</title>
 
         <meta property="og:url" content="{{ url()->full() }}">
         <meta property="og:type" content="website">
