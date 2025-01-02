@@ -24,6 +24,7 @@ export default {
         'inter': ['Inter', ...defaultTheme.fontFamily.sans],
       },
       colors: {
+        'off-white': '#EDEDED',
         'pizza-orange': '#FF5400',
         'pets-orange-100': '#FFD255',
         'pets-orange-200': '#FFBE46',
