@@ -9,12 +9,18 @@
     </h2>
     <div cLass="flex flex-cols p-4 justify-center bg-white space-x-4">
         @foreach(config('pulverizers') as $key => $value)
-            <a href="{{ route('pulverizer', ['type' => $key]) }}">
-            @svg('pulverizers.'.$key, [
-                'class' => 'w-96 md:w-24 border rounded-md hover:animate-shake',
-                'title' => Str::of($key)->ucfirst()->append(' ')->append('Pizza Pet Pulverizer')->toString(),
-            ])
-            </a>
+            <div class="flex flex-col">
+                <a href="{{ route('pulverizer', ['type' => $key]) }}">
+                @svg('pulverizers.'.$key, [
+                    'class' => 'w-96 md:w-24 border rounded-md'
+                        . ($key == 'white' ? ' animate-shake' : ' hover:animate-shake'),
+                    'title' => Str::of($key)->ucfirst()->append(' ')->append('Pizza Pet Pulverizer')->toString(),
+                ])
+                </a>
+                <span class="mt-1 text-xs font-game font-semibold text-orange-900 text-center">
+                    {{ ($key == 'white' ? 'active' : 'inactive') }}
+                </span>
+            </div>
         @endforeach
     </div>
 </section>
