@@ -20,6 +20,9 @@
                 <span class="mt-1 text-xs font-game font-semibold text-orange-900 text-center">
                     {{ ($key == '---' ? 'active' : 'inactive') }}
                 </span>
+                <span class="text-xs font-game font-semibold text-orange-600 text-center">
+                    {{ ($key == 'white' ? 'recharging' : '') }}
+                </span>
             </div>
         @endforeach
     </div>
