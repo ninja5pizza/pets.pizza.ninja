@@ -15,14 +15,14 @@
                 >
                 @svg('pulverizers.'.$key, [
                     'class' => 'w-96 md:w-24 border rounded-md cursor-pointer'
-                        . ($key == 'black' ? ' animate-shake' : ' hover:animate-shake'),
+                        . ($key == '---' ? ' animate-shake' : ' hover:animate-shake'),
                     'title' => Str::of($key)->ucfirst()->append(' ')->append('Pizza Pet Pulverizer')->toString(),
                 ])
                 </a>
                 <span class="mt-1 text-xs font-game font-semibold text-orange-900 text-center">
-                    {{ ($key == 'black' ? 'active' : 'inactive') }}
+                    {{ ($key == '---' ? 'active' : 'inactive') }}
                 </span>
-                <span class="text-xs font-game font-semibold text-orange-600 text-center {{ $key == 'white' ? 'visible' : 'invisible' }}">
+                <span class="text-xs font-game font-semibold text-orange-600 text-center {{ $key == 'white' || $key == 'black' ? 'visible' : 'invisible' }}">
                     recharging
                 </span>
             </div>
