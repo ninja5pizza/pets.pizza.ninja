@@ -2,8 +2,12 @@
 
 namespace App;
 
+use Illuminate\Support\Str;
+
 class Pulverizer
 {
+    public string $key;
+
     public string $inscription_id;
 
     public string $owner;
@@ -27,5 +31,18 @@ class Pulverizer
                 $this->{$key} = $value;
             }
         }
+    }
+
+    public function isActive(): bool
+    {
+        return $this->status === 'active';
+    }
+
+    public function name(): string
+    {
+        return Str::of($this->key)
+            ->append(' ')
+            ->append('Pineapple Pulverizer')
+            ->toString();
     }
 }
