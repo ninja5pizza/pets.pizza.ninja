@@ -6,7 +6,7 @@ use Illuminate\Support\Str;
 
 class Pulverizer
 {
-    public string $key;
+    public string $type;
 
     public string $inscription_id;
 
@@ -22,9 +22,9 @@ class Pulverizer
 
     public string $status;
 
-    public function __construct(string $key, array $attributes = [])
+    public function __construct(string $type, array $attributes = [])
     {
-        $this->key = $key;
+        $this->type = $type;
 
         foreach ($attributes as $key => $value) {
             if (property_exists($this, $key)) {
@@ -40,7 +40,7 @@ class Pulverizer
 
     public function name(): string
     {
-        return Str::of($this->key)
+        return Str::of($this->type)
             ->append(' ')
             ->append('Pineapple Pulverizer')
             ->toString();

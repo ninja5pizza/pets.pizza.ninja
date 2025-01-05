@@ -8,21 +8,21 @@
         PULVERIZERS
     </h2>
     <div cLass="flex flex-cols p-4 justify-center bg-white space-x-4">
-        @foreach(config('pulverizers') as $key => $value)
+        @foreach(config('pulverizers') as $type => $value)
             <div class="flex flex-col">
                 <a
-                    href="{{ route('pulverizer', ['type' => $key]) }}"
+                    href="{{ route('pulverizer', ['type' => $type]) }}"
                 >
-                @svg('pulverizers.'.$key, [
+                @svg('pulverizers.'.$type, [
                     'class' => 'w-96 md:w-24 border rounded-md cursor-pointer'
-                        . (pulverizer($key, $value)->isActive() ? ' animate-shake' : ' hover:animate-shake'),
-                    'title' =>  pulverizer($key, $value)->name(),
+                        . (pulverizer($type, $value)->isActive() ? ' animate-shake' : ' hover:animate-shake'),
+                    'title' =>  pulverizer($type, $value)->name(),
                 ])
                 </a>
                 <span class="mt-1 text-xs font-game font-semibold text-orange-900 text-center">
-                    {{ pulverizer($key, $value)->status }}
+                    {{ pulverizer($type, $value)->status }}
                 </span>
-                <span class="text-xs font-game font-semibold text-orange-600 text-center {{ pulverizer($key, $value)->is_recharging ? 'visible' : 'invisible' }}">
+                <span class="text-xs font-game font-semibold text-orange-600 text-center {{ pulverizer($type, $value)->is_recharging ? 'visible' : 'invisible' }}">
                     recharging
                 </span>
             </div>

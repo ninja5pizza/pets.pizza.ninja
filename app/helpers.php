@@ -14,8 +14,8 @@ if (! function_exists('cdn_asset')) {
 }
 
 if (! function_exists('pulverizer')) {
-    function pulverizer(string $key, array $attributes): Pulverizer
+    function pulverizer(string $type, array $attributes): Pulverizer
     {
-        return new Pulverizer($key, $attributes);
+        return new Pulverizer($type, $attributes);
     }
 }
