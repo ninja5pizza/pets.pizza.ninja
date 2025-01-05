@@ -41,6 +41,7 @@ class Pulverizer
     public function name(): string
     {
         return Str::of($this->type)
+            ->ucfirst()
             ->append(' ')
             ->append('Pineapple Pulverizer')
             ->toString();
