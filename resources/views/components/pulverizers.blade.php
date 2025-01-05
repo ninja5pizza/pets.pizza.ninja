@@ -15,14 +15,14 @@
                 >
                 @svg('pulverizers.'.$key, [
                     'class' => 'w-96 md:w-24 border rounded-md cursor-pointer'
-                        . ($key == '---' ? ' animate-shake' : ' hover:animate-shake'),
-                    'title' => Str::of($key)->ucfirst()->append(' ')->append('Pizza Pet Pulverizer')->toString(),
+                        . (pulverizer($key, $value)->isActive() ? ' animate-shake' : ' hover:animate-shake'),
+                    'title' =>  pulverizer($key, $value)->name(),
                 ])
                 </a>
                 <span class="mt-1 text-xs font-game font-semibold text-orange-900 text-center">
-                    {{ ($key == '---' ? 'active' : 'inactive') }}
+                    {{ pulverizer($key, $value)->status }}
                 </span>
-                <span class="text-xs font-game font-semibold text-orange-600 text-center {{ $key == 'white' || $key == 'black' ? 'visible' : 'invisible' }}">
+                <span class="text-xs font-game font-semibold text-orange-600 text-center {{ pulverizer($key, $value)->is_recharging ? 'visible' : 'invisible' }}">
                     recharging
                 </span>
             </div>
