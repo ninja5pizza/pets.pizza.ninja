@@ -10,6 +10,9 @@ return [
         'recharge_period_in_weeks' => 6,
         'is_recharging' => false,
         'status' => 'inactive',
+        'triggered_blockheights' => [
+            //
+        ],
     ],
 
     'white' => [
@@ -20,6 +23,9 @@ return [
         'recharge_period_in_weeks' => 5,
         'is_recharging' => true,
         'status' => 'inactive',
+        'triggered_blockheights' => [
+            77776,
+        ],
     ],
 
     'black' => [
@@ -30,6 +36,9 @@ return [
         'recharge_period_in_weeks' => 6,
         'is_recharging' => true,
         'status' => 'inactive',
+        'triggered_blockheights' => [
+            877861,
+        ],
     ],
 
     'red' => [
@@ -38,6 +47,9 @@ return [
         'recharge_period_in_weeks' => 7,
         'is_recharging' => false,
         'status' => 'inactive',
+        'triggered_blockheights' => [
+            //
+        ],
     ],
 
     'green' => [
@@ -46,6 +58,9 @@ return [
         'recharge_period_in_weeks' => 7,
         'is_recharging' => false,
         'status' => 'inactive',
+        'triggered_blockheights' => [
+            //
+        ],
     ],
 
     'blue' => [
@@ -54,6 +69,9 @@ return [
         'recharge_period_in_weeks' => 7,
         'is_recharging' => false,
         'status' => 'inactive',
+        'triggered_blockheights' => [
+            //
+        ],
     ],
 
 ];

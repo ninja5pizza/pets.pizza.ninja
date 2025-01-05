@@ -3,6 +3,7 @@
 namespace App;
 
 use Illuminate\Support\Str;
+use Illuminate\Support\Collection;
 
 class Pulverizer
 {
@@ -22,6 +23,8 @@ class Pulverizer
 
     public string $status;
 
+    public array $triggered_blockheights;
+
     public function __construct(string $type, array $attributes = [])
     {
         $this->type = $type;
@@ -31,6 +34,17 @@ class Pulverizer
                 $this->{$key} = $value;
             }
         }
+    }
+
+    public function lastBlockHeightTriggered(): ?int
+    {
+        $blocks = Collection::make($this->triggered_blockheights);
+
+        if ($blocks->isEmpty()) {
+            return null;
+        }
+
+        return (int) $blocks->max();
     }
 
     public function isActive(): bool
@@ -45,5 +59,10 @@ class Pulverizer
             ->append(' ')
             ->append('Pineapple Pulverizer')
             ->toString();
+    }
+
+    public function timesTriggered(): int
+    {
+        return Collection::make($this->triggered_blockheights)->count();
     }
 }
