@@ -58,6 +58,16 @@
             {{ $pulverizer->status }} NOW
         </div>
 
+        @if($pulverizer->lastBlockHeightTriggered() === NULL)
+            <div class="mt-1 text-2l font-game text-center font-semibold leading-6 text-orange-200">
+                NOT BEEN TRIGGERED YET
+            </div>
+        @else
+            <div class="mt-1 text-2l font-game text-center font-semibold leading-6 text-orange-200">
+                LAST TRIGGERED AT BLOCK {{ $pulverizer->lastBlockHeightTriggered() }}
+            </div>
+        @endif
+
         <x-footer/>
 
         @vite('resources/js/app.js')
