@@ -20,6 +20,8 @@ class Pulverizer
 
     public function __construct(string $key, array $attributes = [])
     {
+        $this->key = $key;
+
         foreach ($attributes as $key => $value) {
             if (property_exists($this, $key)) {
                 $this->{$key} = $value;
