@@ -69,6 +69,12 @@
             </div>
         @endif
 
+        @if($pulverizer->isActive())
+        <div class="mt-1 text-xl font-game text-center font-bold leading-6 text-orange-100">
+                EXPLODES AT BLOCK {{ $pulverizer->lastBlockHeightTriggered() + 72 }}
+        </div>
+        @endif
+
         <x-footer/>
 
         @vite('resources/js/app.js')
