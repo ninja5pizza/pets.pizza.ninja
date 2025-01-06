@@ -64,7 +64,7 @@
                 NOT BEEN TRIGGERED YET
             </div>
         @else
-            <div class="mt-1 text-2l font-game text-center font-semibold leading-6 text-orange-200">
+            <div class="mt-1 text-base font-game text-center font-semibold leading-6 text-orange-200">
                 LAST TRIGGERED AT BLOCK {{ $pulverizer->lastBlockHeightTriggered() }}
             </div>
         @endif
