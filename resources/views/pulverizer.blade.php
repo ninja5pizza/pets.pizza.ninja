@@ -38,7 +38,8 @@
 
         <main class="mt-12 flex justify-center">
             @svg('pulverizers.'.$type, [
-                'class' => 'w-96 border rounded-md',
+                'class' => 'w-96 border rounded-md'
+                    . ($pulverizer->isActive() ? ' animate-shake' : ''),
                 'title' => $pulverizer->name(),
             ])
         </main>
