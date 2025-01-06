@@ -35,6 +35,10 @@ return [
         ],
     ],
 
+    'blockcypher' => [
+        'base_url' => 'https://api.blockcypher.com/v1/',
+    ],
+
     'fathom' => [
         'site_id' => env('FATHOM_SITE_ID'),
     ],
