@@ -34,48 +34,50 @@
         @endif
     </head>
     <body class="bg-pizza-orange">
-        <x-navbar/>
+        <div id="#app">
+            <x-navbar/>
 
-        <main class="mt-12 flex justify-center">
-            @svg('pulverizers.'.$type, [
-                'class' => 'w-96 border rounded-md'
-                    . ($pulverizer->isActive() ? ' animate-shake' : ''),
-                'title' => $pulverizer->name(),
-            ])
-        </main>
+            <main class="mt-12 flex justify-center">
+                @svg('pulverizers.'.$type, [
+                    'class' => 'w-96 border rounded-md'
+                        . ($pulverizer->isActive() ? ' animate-shake' : ''),
+                    'title' => $pulverizer->name(),
+                ])
+            </main>
 
-        <div class="mt-4 text-xl font-game text-center font-semibold leading-6 text-orange-100">
-            WHEN WILL IT BLOW UP?
-        </div>
-
-        <div class="mt-8 flex justify-center text-xs text-center font-semibold leading-6 text-orange-900">
-            <a href="https://x.com/ninja5_pizza" class="flex flex-col justify-center items-center gap-x-2 hover:text-orange-100" target="_blank" rel="noopener">
-                <p>FOLLOW THE NINJA5</p>
-                <x-icon-twitter-x class="mt-1 w-8"/>
-            </a>
-        </div>
-
-        <div class="mt-8 text-xl font-game text-center font-semibold leading-6 text-orange-100">
-            {{ $pulverizer->status }} NOW
-        </div>
-
-        @if($pulverizer->lastBlockHeightTriggered() === NULL)
-            <div class="mt-1 text-2l font-game text-center font-semibold leading-6 text-orange-200">
-                NOT BEEN TRIGGERED YET
+            <div class="mt-4 text-xl font-game text-center font-semibold leading-6 text-orange-100">
+                WHEN WILL IT BLOW UP?
             </div>
-        @else
-            <div class="mt-1 text-base font-game text-center font-semibold leading-6 text-orange-200">
-                LAST TRIGGERED AT BLOCK {{ $pulverizer->lastBlockHeightTriggered() }}
+
+            <div class="mt-8 flex justify-center text-xs text-center font-semibold leading-6 text-orange-900">
+                <a href="https://x.com/ninja5_pizza" class="flex flex-col justify-center items-center gap-x-2 hover:text-orange-100" target="_blank" rel="noopener">
+                    <p>FOLLOW THE NINJA5</p>
+                    <x-icon-twitter-x class="mt-1 w-8"/>
+                </a>
             </div>
-        @endif
 
-        @if($pulverizer->isActive())
-        <div class="mt-1 text-xl font-game text-center font-bold leading-6 text-orange-100">
-                EXPLODES AT BLOCK {{ $pulverizer->lastBlockHeightTriggered() + 72 }}
+            <div class="mt-8 text-xl font-game text-center font-semibold leading-6 text-orange-100">
+                {{ $pulverizer->status }} NOW
+            </div>
+
+            @if($pulverizer->lastBlockHeightTriggered() === NULL)
+                <div class="mt-1 text-2l font-game text-center font-semibold leading-6 text-orange-200">
+                    NOT BEEN TRIGGERED YET
+                </div>
+            @else
+                <div class="mt-1 text-base font-game text-center font-semibold leading-6 text-orange-200">
+                    LAST TRIGGERED AT BLOCK {{ $pulverizer->lastBlockHeightTriggered() }}
+                </div>
+            @endif
+
+            @if($pulverizer->isActive())
+            <div class="mt-1 text-xl font-game text-center font-bold leading-6 text-orange-100">
+                    EXPLODES AT BLOCK {{ $pulverizer->lastBlockHeightTriggered() + 72 }}
+            </div>
+            @endif
+
+            <x-footer/>
         </div>
-        @endif
-
-        <x-footer/>
 
         @vite('resources/js/app.js')
         @stack('scripts')
