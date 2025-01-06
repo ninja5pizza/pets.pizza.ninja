@@ -37,7 +37,7 @@
         <div id="#app">
             <x-navbar/>
 
-            <main class="w-full mt-36 mb-24 flex flex-col items-center" aria-labelledby="pizza-pets-heading">
+            <main class="w-full mt-36 mb-16 flex flex-col items-center" aria-labelledby="pizza-pets-heading">
                 <h2 id="pizza-pets-heading" class="sr-only">Pizza Pets</h2>
                 <div class="relative w-full">
                     <a href="https://pizzapets.fun" target="_blank" rel="noopener">
@@ -58,7 +58,9 @@
                 </div>
             </main>
 
-            <section class="ml-6 flex justify-center items-center font-game text-2xl md:text-4xl font-semibold leading-6 text-orange-100">
+            <x-socials/>
+
+            <section class="mt-8 ml-6 flex justify-center items-center font-game text-2xl md:text-4xl font-semibold leading-6 text-orange-100">
                 <a
                     class="hover:text-white"
                     href="https://pizzapets.fun"
@@ -73,12 +75,10 @@
                 </a>
             </section>
 
-            <div class="mt-8 pt-2 pb-4 bg-pets-orange-600 text-center text-orange-200">
-                <div class="text-xs leading-6 text-orange-300">CURRRENT BLOCK</div>
-                <div class="text-4xl font-game leading-6">{{ $blockheight }}</div>
+            <div class="mt-16 pt-2 pb-4 border-t bg-pets-orange-200 text-center">
+                <div class="text-xs leading-6 text-orange-900">CURRRENT BLOCK</div>
+                <div class="text-4xl font-game font-semibold leading-6 text-orange-900">{{ $blockheight }}</div>
             </div>
-
-            <x-socials/>
 
             <x-pulverizers/>
 
