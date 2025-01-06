@@ -73,6 +73,11 @@
                 </a>
             </section>
 
+            <div class="mt-8 pt-2 pb-4 bg-pets-orange-600 text-center text-orange-200">
+                <div class="text-xs leading-6 text-orange-300">CURRRENT BLOCK</div>
+                <div class="text-4xl font-game leading-6">{{ $blockheight }}</div>
+            </div>
+
             <x-socials/>
 
             <x-pulverizers/>
