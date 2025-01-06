@@ -68,9 +68,9 @@ return [
         'hex_color' => '#6089FF',
         'recharge_period_in_weeks' => 7,
         'is_recharging' => false,
-        'status' => 'inactive',
+        'status' => 'active',
         'triggered_blockheights' => [
-            //
+            878058,
         ],
     ],
 
