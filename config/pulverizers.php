@@ -67,8 +67,8 @@ return [
         'inscription_id' => '14580fd5072a0e96d8e0e6b1526319fde391d788b80a17eee23bf91ee1f961b2i1',
         'hex_color' => '#6089FF',
         'recharge_period_in_weeks' => 7,
-        'is_recharging' => false,
-        'status' => 'active',
+        'is_recharging' => true,
+        'status' => 'inactive',
         'triggered_blockheights' => [
             878058,
         ],
