@@ -49,13 +49,6 @@
                 WHEN WILL IT BLOW UP?
             </div>
 
-            <div class="mt-8 flex justify-center text-xs text-center font-semibold leading-6 text-orange-900">
-                <a href="https://x.com/ninja5_pizza" class="flex flex-col justify-center items-center gap-x-2 hover:text-orange-100" target="_blank" rel="noopener">
-                    <p>FOLLOW THE NINJA5</p>
-                    <x-icon-twitter-x class="mt-1 w-8"/>
-                </a>
-            </div>
-
             <div class="mt-8 text-xl font-game text-center font-semibold leading-6 text-orange-100">
                 {{ $pulverizer->status }} NOW
             </div>
