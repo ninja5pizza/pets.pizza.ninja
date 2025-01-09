@@ -23,7 +23,7 @@ class Pulverizer
 
     public string $status;
 
-    public array $triggered_blockheights;
+    public array $triggered_blockheights = [];
 
     public function __construct(string $type, array $attributes = [])
     {
