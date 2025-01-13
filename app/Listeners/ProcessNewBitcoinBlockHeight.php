@@ -12,6 +12,10 @@ class ProcessNewBitcoinBlockHeight
         foreach(config('pulverizers') as $type => $value) {
             $pulverizer = pulverizer($type, $value);
 
+            if (! $pulverizer->canBeTriggered()) {
+                continue;
+            }
+
             RetrieveChildInscriptions::dispatch($pulverizer->inscription_id);
         }
     }
