@@ -47,6 +47,17 @@ class Pulverizer
         return (int) $blocks->max();
     }
 
+    public function rechargedAtBlockHeight(): ?int
+    {
+        $lastBlockTriggered = $this->lastBlockHeightTriggered();
+
+        if ($lastBlockTriggered) {
+            return $lastBlockTriggered + 72 + ($this->recharge_period_in_weeks * 1008);
+        }
+
+        return null;
+    }
+
     public function isActive(): bool
     {
         return $this->status === 'active';
