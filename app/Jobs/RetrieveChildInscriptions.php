@@ -27,7 +27,8 @@ class RetrieveChildInscriptions implements ShouldQueue
         $this->apiUrl = Str::of('https://ordiscan.com/r/children/')
             ->append($this->inscription_id)
             ->append('/inscriptions/')
-            ->append($this->page);
+            ->append($this->page)
+            ->toString();
 
         $this->parent = Inscription::where('inscription_id', $this->inscription_id)->first();
     }
