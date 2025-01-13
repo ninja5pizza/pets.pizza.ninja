@@ -21,7 +21,7 @@ class Pulverizer
 
     protected bool $is_recharging;
 
-    protected string $status;
+    public string $status;
 
     protected array $triggered_blockheights = [];
 
@@ -60,7 +60,7 @@ class Pulverizer
 
     public function canBeTriggered(): bool
     {
-        if ($this->isActive() || $this->isRecharching()) {
+        if ($this->isActive() || $this->isRecharging()) {
             return false;
         }
 
@@ -72,7 +72,7 @@ class Pulverizer
         return $this->status === 'active';
     }
 
-    public function isRecharching(): bool
+    public function isRecharging(): bool
     {
         return $this->is_recharging;
     }
