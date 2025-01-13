@@ -16,7 +16,8 @@ class ProcessNewBitcoinBlockHeight
                 continue;
             }
 
-            RetrieveChildInscriptions::dispatch($pulverizer->inscription_id);
+            RetrieveChildInscriptions::dispatch($pulverizer->inscription_id)
+                ->delay(now()->addMinute());
         }
     }
 }
