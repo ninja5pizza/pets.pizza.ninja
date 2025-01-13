@@ -19,11 +19,11 @@ class Pulverizer
 
     public int $recharge_period_in_weeks;
 
-    public bool $is_recharging;
+    protected bool $is_recharging;
 
-    public string $status;
+    protected string $status;
 
-    public array $triggered_blockheights = [];
+    protected array $triggered_blockheights = [];
 
     public function __construct(string $type, array $attributes = [])
     {
