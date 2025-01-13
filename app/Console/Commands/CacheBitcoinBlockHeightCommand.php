@@ -20,7 +20,10 @@ class CacheBitcoinBlockHeightCommand extends Command
     {
         parent::__construct();
 
-        $this->currentHeight = (int) Cache::get('bitcoin_block_height', 0);
+        $this->currentHeight = Collection::make(
+            Cache::get('bitcoin_block_height', default: [])
+        )
+            ->get('height', default: 'unknown');
     }
 
     public function handle()
