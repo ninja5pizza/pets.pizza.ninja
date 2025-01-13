@@ -32,9 +32,10 @@ class CacheBitcoinBlockHeightCommand extends Command
         )
             ->get('height', default: 'unknown');
 
-        if ($height !== 'unknown' && $height > $this->currentHeight) {
-            NewBitcoinBlockHeight::dispatch($height);
-        }
+        NewBitcoinBlockHeight::dispatchIf(
+            $height !== 'unknown' && $height > $this->currentHeight,
+            $height
+        );
 
         $this->info('The current Bitcoin block height is '.$height);
     }
