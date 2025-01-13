@@ -11,12 +11,12 @@
         <div class="mx-auto max-w-7xl">
             <div class="grid grid-cols-2 gap-px lg:grid-cols-4">
                 <div class="px-4 py-6 sm:px-6 lg:px-8">
-                    <p class="text-xs text-orange-900 uppercase">pets alive</p>
-                    <span class="text-4xl text-white">{{ $alive_count }}</span>
-                </div>
-                <div class="px-4 py-6 sm:px-6 lg:px-8">
                     <p class="text-xs text-orange-900 uppercase">pets dead</p>
                     <span class="text-4xl text-off-white">{{ $dead_count }}</span>
+                </div>
+                <div class="px-4 py-6 sm:px-6 lg:px-8">
+                    <p class="text-xs text-orange-900 uppercase">pets alive</p>
+                    <span class="text-4xl text-white">{{ $alive_count }}</span>
                 </div>
                 <div class="px-4 py-6 sm:px-6 lg:px-8">
                     <p class="text-xs text-orange-900 uppercase">owners</p>
