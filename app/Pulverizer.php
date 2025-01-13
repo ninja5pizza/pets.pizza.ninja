@@ -58,9 +58,23 @@ class Pulverizer
         return null;
     }
 
+    public function canBeTriggered(): bool
+    {
+        if ($this->isActive() || $this->isRecharching()) {
+            return false;
+        }
+
+        return true;
+    }
+
     public function isActive(): bool
     {
         return $this->status === 'active';
+    }
+
+    public function isRecharching(): bool
+    {
+        return $this->is_recharging;
     }
 
     public function name(): string
