@@ -23,7 +23,7 @@ class CacheBitcoinBlockHeightCommand extends Command
         $this->currentHeight = Collection::make(
             Cache::get('bitcoin_block_height', default: [])
         )
-            ->get('height', default: 'unknown');
+            ->get('height', default: 0);
     }
 
     public function handle()
@@ -36,7 +36,7 @@ class CacheBitcoinBlockHeightCommand extends Command
             ->get('height', default: 'unknown');
 
         NewBitcoinBlockHeight::dispatchIf(
-            $height !== 'unknown' && $height > $this->currentHeight,
+            $height > $this->currentHeight,
             $height
         );
 
