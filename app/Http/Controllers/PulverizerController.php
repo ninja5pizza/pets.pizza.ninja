@@ -6,7 +6,12 @@ use Illuminate\View\View;
 
 class PulverizerController extends Controller
 {
-    public function __invoke(string $type): View
+    public function index(): View
+    {
+        return view('pulverizers.index');
+    }
+
+    public function show(string $type): View
     {
         $pulverizer = pulverizer(
             $type,
@@ -16,7 +21,7 @@ class PulverizerController extends Controller
                 ->get($type),
         );
 
-        return view('pulverizer', [
+        return view('pulverizers.show', [
             'pulverizer' => $pulverizer,
             'type' => $type,
         ]);

@@ -10,36 +10,36 @@ class ViewPulverizerPageTest extends TestCase
     #[Test]
     public function a_request_to_the_black_pulverizer_page_should_return_a_200_status_code(): void
     {
-        $this->get('/pulverizer/black')->assertOk()->assertViewIs('pulverizer');
+        $this->get('/pulverizer/black')->assertOk()->assertViewIs('pulverizers.show');
     }
 
     #[Test]
     public function a_request_to_the_blue_pulverizer_page_should_return_a_200_status_code(): void
     {
-        $this->get('/pulverizer/blue')->assertOk()->assertViewIs('pulverizer');
+        $this->get('/pulverizer/blue')->assertOk()->assertViewIs('pulverizers.show');
     }
 
     #[Test]
     public function a_request_to_the_green_pulverizer_page_should_return_a_200_status_code(): void
     {
-        $this->get('/pulverizer/green')->assertOk()->assertViewIs('pulverizer');
+        $this->get('/pulverizer/green')->assertOk()->assertViewIs('pulverizers.show');
     }
 
     #[Test]
     public function a_request_to_the_red_pulverizer_page_should_return_a_200_status_code(): void
     {
-        $this->get('/pulverizer/red')->assertOk()->assertViewIs('pulverizer');
+        $this->get('/pulverizer/red')->assertOk()->assertViewIs('pulverizers.show');
     }
 
     #[Test]
     public function a_request_to_the_yellow_pulverizer_page_should_return_a_200_status_code(): void
     {
-        $this->get('/pulverizer/yellow')->assertOk()->assertViewIs('pulverizer');
+        $this->get('/pulverizer/yellow')->assertOk()->assertViewIs('pulverizers.show');
     }
 
     #[Test]
     public function a_request_to_the_white_pulverizer_page_should_return_a_200_status_code(): void
     {
-        $this->get('/pulverizer/white')->assertOk()->assertViewIs('pulverizer');
+        $this->get('/pulverizer/white')->assertOk()->assertViewIs('pulverizers.show');
     }
 }
