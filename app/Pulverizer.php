@@ -67,6 +67,11 @@ class Pulverizer
         return true;
     }
 
+    public function detonatesAtBlock(): int
+    {
+        return $this->lastBlockHeightTriggered() + 72;
+    }
+
     public function isActive(): bool
     {
         return $this->status === 'active';
