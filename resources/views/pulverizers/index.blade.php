@@ -24,7 +24,18 @@
     <body class="bg-pizza-orange">
         <div id="#app">
             <x-navbar/>
-
+                <main class="mt-12 flex flex-col md:flex-row items-center justify-center space-x-0 md:space-x-4 space-y-4 md:space-y-0">
+                @foreach(config('pulverizers') as $type => $value)
+                    <a
+                        href="{{ route('pulverizer', ['type' => $type]) }}"
+                    >
+                    @svg('pulverizers.'.$type, [
+                        'class' => 'w-36 border rounded-md cursor-pointer',
+                        'title' =>  pulverizer($type, $value)->name(),
+                    ])
+                    </a>
+                @endforeach
+                </main>
             <x-footer/>
         </div>
 
