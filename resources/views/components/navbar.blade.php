@@ -11,6 +11,20 @@
             @endif
         </div>
         <div class="flex px-4 md:px-8 space-x-8">
+            @if(Route::currentRouteName() === 'pulverizers')
+            <span
+                class="inline-flex items-center border-b-2 border-pets-orange-200 px-2 pt-1 text-sm font-bold text-orange-600"
+            >
+                pulverizers
+            </span>
+            @else
+            <a
+                href="{{ route('pulverizers') }}"
+                class="inline-flex items-center border-b-2 border-pets-orange-600 hover:border-pets-orange-200 px-2 pt-1 text-sm font-medium text-orange-900 hover:text-orange-700"
+            >
+                pulverizers
+            </a>
+            @endif
             <a
                 href="https://docs.pizzapets.org"
                 class="inline-flex items-center border-b-2 border-pets-orange-600 hover:border-pets-orange-200 px-2 pt-1 text-sm font-medium text-orange-900 hover:text-orange-700"

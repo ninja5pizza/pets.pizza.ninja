@@ -8,7 +8,8 @@ Route::get('/', function () {
 })->name('home');
 
 Route::get('/pulverizer', fn () => redirect('/pulverizers'));
-Route::get('/pulverizers', [PulverizerController::class, 'index']);
+Route::get('/pulverizers', [PulverizerController::class, 'index'])
+    ->name('pulverizers');
 
 Route::get('/pulverizer/{type}', [PulverizerController::class, 'show'])
     ->whereIn(

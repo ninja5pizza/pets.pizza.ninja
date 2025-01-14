@@ -21,7 +21,14 @@
         <script src="https://cdn.usefathom.com/script.js" data-site="{{ config('services.fathom.site_id') }}" defer></script>
         @endif
     </head>
-    <body>
+    <body class="bg-pizza-orange">
+        <div id="#app">
+            <x-navbar/>
 
+            <x-footer/>
+        </div>
+
+        @vite('resources/js/app.js')
+        @stack('scripts')
     </body>
 </html>
