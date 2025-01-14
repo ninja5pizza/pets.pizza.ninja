@@ -20,7 +20,7 @@
                 ])
                 </a>
                 <span class="mt-1 text-xs font-game font-semibold text-orange-900 text-center">
-                    {{ pulverizer($type, $value)->status }}
+                    {{ pulverizer($type, $value)->status() }}
                 </span>
                 <span class="text-xs font-game font-semibold text-orange-600 text-center {{ pulverizer($type, $value)->isRecharging() ? 'visible' : 'invisible' }}">
                     recharging

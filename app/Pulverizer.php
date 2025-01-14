@@ -21,7 +21,7 @@ class Pulverizer
 
     protected bool $is_recharging;
 
-    public string $status;
+    protected string $status;
 
     protected array $triggered_blockheights = [];
 
@@ -84,6 +84,11 @@ class Pulverizer
             ->append(' ')
             ->append('Pineapple Pulverizer')
             ->toString();
+    }
+
+    public function status(): string
+    {
+        return $this->status;
     }
 
     public function timesTriggered(): int

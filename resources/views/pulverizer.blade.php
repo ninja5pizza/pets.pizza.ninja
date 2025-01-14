@@ -50,7 +50,7 @@
             </div>
 
             <div class="mt-8 text-xl font-game text-center font-semibold leading-6 text-orange-100">
-                {{ $pulverizer->status }} NOW
+                {{ $pulverizer->status() }} NOW
             </div>
 
             @if($pulverizer->lastBlockHeightTriggered() === NULL)
