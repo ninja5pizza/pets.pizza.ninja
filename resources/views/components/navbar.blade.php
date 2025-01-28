@@ -1,4 +1,4 @@
-<nav class="bg-white shadow">
+<nav class="bg-white shadow-sm">
     <div class="flex h-12 justify-between mx-auto max-w-6xl">
         <div class="flex px-4 md:px-8 space-x-8">
             @if(Route::currentRouteName() !== 'home')
