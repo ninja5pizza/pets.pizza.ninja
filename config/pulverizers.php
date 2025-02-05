@@ -9,9 +9,9 @@ return [
         'hex_color' => '#FFD400',
         'recharge_period_in_weeks' => 6,
         'is_recharging' => false,
-        'status' => 'inactive',
+        'status' => 'active',
         'triggered_blockheights' => [
-            //
+            882423,
         ],
     ],
 
