@@ -67,6 +67,11 @@ class Pulverizer
         return true;
     }
 
+    public function lotionPetAtBlock(): int
+    {
+        return $this->lastBlockHeightTriggered() + 36;
+    }
+
     public function detonatesAtBlock(): int
     {
         return $this->lastBlockHeightTriggered() + 72;

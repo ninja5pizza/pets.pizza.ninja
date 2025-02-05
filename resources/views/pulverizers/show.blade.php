@@ -67,6 +67,13 @@
             <div class="mt-1 text-xl font-game text-center font-bold leading-6 text-orange-100">
                     DETONATES AT BLOCK {{ $pulverizer->detonatesAtBlock() }}
             </div>
+            <div class="mt-8 pt-2 pb-4 border-t bg-off-white text-center">
+                <div class="text-xs leading-6 text-orange-900">APPLY LOTION FROM BLOCK</div>
+                <div class="text-4xl font-game font-semibold leading-6 text-orange-900">{{ $pulverizer->lotionPetAtBlock() }}</div>
+
+                <div class="mt-2 text-xs leading-6 text-orange-900">CURRRENT BLOCK</div>
+                <div class="text-4xl font-game font-semibold leading-6 text-orange-900">{{ $blockheight }}</div>
+            </div>
             @endif
 
             <x-footer/>
