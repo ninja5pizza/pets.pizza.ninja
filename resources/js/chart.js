@@ -1,4 +1,4 @@
-import { createChart } from 'lightweight-charts';
+import { createChart, AreaSeries } from 'lightweight-charts';
 
 const url = 'https://ninja5.pizza/api/chart/pizza-pets';
 
@@ -38,8 +38,9 @@ chart.applyOptions({
 
 chart.timeScale().fitContent();
 
-const areaSeries = chart.addAreaSeries({
-    lineColor: '#f97316', topColor: '#fb923c',
+const areaSeries = chart.addSeries(AreaSeries, {
+    lineColor: '#f97316',
+    topColor: '#fb923c',
     bottomColor: 'rgba(67, 20, 7, 0.28)',
 });
 
