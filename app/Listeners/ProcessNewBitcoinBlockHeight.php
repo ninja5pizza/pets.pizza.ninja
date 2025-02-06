@@ -9,7 +9,7 @@ class ProcessNewBitcoinBlockHeight
 {
     public function handle(NewBitcoinBlockHeight $event): void
     {
-        foreach(config('pulverizers') as $type => $value) {
+        foreach (config('pulverizers') as $type => $value) {
             $pulverizer = pulverizer($type, $value);
 
             if (! $pulverizer->canBeTriggered()) {

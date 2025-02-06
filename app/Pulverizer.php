@@ -2,9 +2,9 @@
 
 namespace App;
 
-use Illuminate\Support\Str;
 use Illuminate\Support\Collection;
 use Illuminate\Support\Facades\Cache;
+use Illuminate\Support\Str;
 
 class Pulverizer
 {
@@ -99,7 +99,6 @@ class Pulverizer
 
         return false;
     }
-
 
     public function isRecharging(): bool
     {
