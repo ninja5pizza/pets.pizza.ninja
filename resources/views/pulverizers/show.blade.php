@@ -79,6 +79,19 @@
             </div>
             @endif
 
+            @if($pulverizer->isRecharging())
+            <div class="mt-8 pt-2 pb-4 border-t bg-off-white text-center">
+                <div class="text-xs leading-6 text-orange-900">RECHARGED AT BLOCK</div>
+                <div class="text-4xl font-game font-semibold leading-6 text-orange-900">{{ $pulverizer->rechargedAtBlockHeight() }}</div>
+
+                <div class="mt-2 text-xs leading-6 text-orange-900">CURRRENT BLOCK</div>
+                <div class="text-4xl font-game font-semibold leading-6 text-orange-900">{{ $blockheight }}</div>
+
+                <div class="mt-2 text-xs leading-6 text-orange-900">BLOCKS REMAINING FOR RECHARGE</div>
+                <div class="text-4xl font-game font-semibold leading-6 text-orange-900">{{ $pulverizer->rechargedAtBlockHeight() - $blockheight }}</div>
+            </div>
+            @endif
+
             <x-footer/>
         </div>
 
