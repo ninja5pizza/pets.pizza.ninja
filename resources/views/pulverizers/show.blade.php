@@ -87,8 +87,8 @@
                 <div class="mt-2 text-xs leading-6 text-orange-900">CURRRENT BLOCK</div>
                 <div class="text-4xl font-game font-semibold leading-6 text-orange-900">{{ $blockheight }}</div>
 
-                <div class="mt-2 text-xs leading-6 text-orange-900">BLOCKS REMAINING FOR RECHARGE</div>
-                <div class="text-4xl font-game font-semibold leading-6 text-orange-900">{{ $pulverizer->rechargedAtBlockHeight() - $blockheight }}</div>
+                <div class="mt-2 text-xs leading-6 text-orange-900">BLOCKS TO RECHARGE</div>
+                <div class="text-4xl font-game font-semibold leading-6 text-orange-900">{{ $pulverizer->blocksRemainingToRecharge() }}</div>
             </div>
             @endif
 

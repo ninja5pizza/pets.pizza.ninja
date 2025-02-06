@@ -114,6 +114,18 @@ class Pulverizer
         return false;
     }
 
+    public function blocksRemainingToRecharge(): int
+    {
+        $rechargedAt = $this->rechargedAtBlockHeight();
+        $current = $this->currentBlockHeight();
+
+        if ($rechargedAt === null || $current === null) {
+            return 0;
+        }
+
+        return max(0, $rechargedAt - $current);
+    }
+
     public function name(): string
     {
         return Str::of($this->type)
