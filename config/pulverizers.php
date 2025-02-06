@@ -8,8 +8,8 @@ return [
         'buyer_twitter_handle' => 'PipeAliens',
         'hex_color' => '#FFD400',
         'recharge_period_in_weeks' => 6,
-        'is_recharging' => false,
-        'status' => 'active',
+        'is_recharging' => true,
+        'status' => 'inactive',
         'triggered_blockheights' => [
             882423,
         ],
