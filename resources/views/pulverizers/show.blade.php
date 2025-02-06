@@ -51,6 +51,9 @@
 
             <div class="mt-8 text-xl font-game text-center font-semibold leading-6 text-orange-100">
                 {{ $pulverizer->status() }} NOW
+                @if($pulverizer->isRecharging())
+                ... RECHARGING
+                @endif
             </div>
 
             @if($pulverizer->lastBlockHeightTriggered() === NULL)
