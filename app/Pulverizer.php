@@ -2,8 +2,9 @@
 
 namespace App;
 
-use Illuminate\Support\Collection;
 use Illuminate\Support\Str;
+use Illuminate\Support\Collection;
+use Illuminate\Support\Facades\Cache;
 
 class Pulverizer
 {
@@ -34,6 +35,14 @@ class Pulverizer
                 $this->{$key} = $value;
             }
         }
+    }
+
+    public function currentBlockHeight(): ?int
+    {
+        return Collection::make(
+            Cache::get('bitcoin_block_height', default: [])
+        )
+            ->get('height');
     }
 
     public function lastBlockHeightTriggered(): ?int
@@ -72,19 +81,37 @@ class Pulverizer
         return $this->lastBlockHeightTriggered() + 36;
     }
 
-    public function detonatesAtBlock(): int
+    public function detonatesAtBlock(): ?int
     {
-        return $this->lastBlockHeightTriggered() + 72;
+        return ($this->lastBlockHeightTriggered() === null)
+            ? null
+            : $this->lastBlockHeightTriggered() + 72;
     }
 
     public function isActive(): bool
     {
-        return $this->status === 'active';
+        $detonatesAt = $this->detonatesAtBlock();
+        $currentHeight = $this->currentBlockHeight();
+
+        if ($detonatesAt !== null && $currentHeight !== null) {
+            return $detonatesAt > $currentHeight;
+        }
+
+        return false;
     }
+
 
     public function isRecharging(): bool
     {
-        return $this->is_recharging;
+        if ($this->isActive()) {
+            return false;
+        }
+
+        if ($this->rechargedAtBlockHeight() > $this->currentBlockHeight()) {
+            return true;
+        }
+
+        return false;
     }
 
     public function name(): string
@@ -98,7 +125,11 @@ class Pulverizer
 
     public function status(): string
     {
-        return $this->status;
+        if ($this->isActive()) {
+            return 'active';
+        }
+
+        return 'inactive';
     }
 
     public function timesTriggered(): int
