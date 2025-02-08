@@ -24,7 +24,8 @@ return [
         'is_recharging' => true,
         'status' => 'inactive',
         'triggered_blockheights' => [
-            877704,
+            882823,
+            877704 ,
         ],
     ],
 
